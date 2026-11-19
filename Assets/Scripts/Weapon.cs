@@ -104,13 +104,13 @@ public class Weapon : MonoBehaviour
             // Damage the target (added in the tutorial)
             EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
 
-            // if(target == null)
+            // Hit effect for visual feedback
+            CreateHitImpact(hit);
+
+            if(target == null)
             // {
             //     return;
             // }
-
-            // Hit effect for visual feedback
-        CreateHitImpact(hit);
 
             target.TakeDamage(damage);
         }
