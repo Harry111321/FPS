@@ -108,9 +108,9 @@ public class Weapon : MonoBehaviour
             CreateHitImpact(hit);
 
             if(target == null)
-            // {
-            //     return;
-            // }
+             {
+                 return;
+             }
 
             target.TakeDamage(damage);
         }
